@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="verification-box">
+    <h1 class="title">SEALAND 验证码</h1>
+    <!--/*@thymesVar id="content" type="java.lang.String"*/-->
+    <p th:utext="${content}" class="verification-code"></p>
+    <p class="tip">验证码5分钟内有效<br>请及时完成验证</p>
+</div>
+</body>
+<style>
+    .verification-box {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 2rem 3rem;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        width: 90%;
+        max-width: 300px;
+    }
+    .title {
+        color: #2c3e50;
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    .verification-code {
+        font-size: 2.5rem;
+        letter-spacing: 8px;
+        margin: 1.5rem 0;
+        color: #3498db;
+        font-weight: bold;
+        animation: scale 1s ease-in-out infinite alternate;
+    }
+    .tip {
+        color: #7f8c8d;
+        font-size: 0.9rem;
+        margin-top: 1rem;
+        line-height: 1.5;
+    }
+    @keyframes scale {
+        from {
+            transform: scale(0.95);
+        }
+        to {
+            transform: scale(1.05);
+        }
+    }
+</style>
+</html>

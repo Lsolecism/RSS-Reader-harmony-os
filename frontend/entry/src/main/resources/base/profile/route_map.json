@@ -1,0 +1,52 @@
+{
+  "routerMap": [
+    {
+      "name": "MainPage",
+      "pageSourceFile": "src/main/ets/pages/MainPage.ets",
+      "buildFunction": "MainPageBuilder",
+      "data": {
+        "description" : "this is MainPage"
+      }
+    },
+    {
+      "name": "RegisterPage",
+      "pageSourceFile": "src/main/ets/pages/RegisterPage.ets",
+      "buildFunction": "RegisterPageBuilder",
+      "data": {
+        "description" : "this is RegisterPage"
+      }
+    },
+    {
+      "name": "GoalPage",
+      "pageSourceFile": "src/main/ets/pages/GoalPage.ets",
+      "buildFunction": "GoalPageBuilder",
+      "data": {
+        "description" : "this is GoalPage"
+      }
+    },
+    {
+      "name":"RSSPage",
+      "pageSourceFile": "src/main/ets/pages/RSSPage.ets",
+      "buildFunction": "RSSPageBuilder",
+      "data": {
+        "description" : "this is RSSPage"
+      }
+    },
+    {
+      "name":"RSSShowPage",
+      "pageSourceFile": "src/main/ets/pages/RSSShowPage.ets",
+      "buildFunction": "RSSShowPageBuilder",
+      "data": {
+        "description" : "this is RSSShowPage"
+      }
+    },
+    {
+      "name":"MusicPlayPage",
+      "pageSourceFile": "src/main/ets/pages/MusicPlayPage.ets",
+      "buildFunction": "MusicPlayPageBuilder",
+      "data": {
+        "description" : "this is MusicPlayPage"
+      }
+    }
+  ]
+}

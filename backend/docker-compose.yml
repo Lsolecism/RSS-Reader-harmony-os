@@ -1,0 +1,15 @@
+version: '3'
+services:
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"    # AMQP 协议端口（程序连接）
+      - "15672:15672"  # 管理界面端口
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq  # 数据持久化
+    environment:
+      RABBITMQ_DEFAULT_USER: myuser      # 自定义用户名
+      RABBITMQ_DEFAULT_PASS: mypassword  # 自定义密码
+volumes:
+  rabbitmq_data:  # 声明持久化卷
